@@ -1,0 +1,16 @@
+name: SpigotChatProxyPlugin
+main: com.cabub.SpigotChatProxyPlugin
+version: 1.0
+commands:
+  toggle_chat_proxy:
+    description: Toggles chat proxying to api
+    usage: /toggle_chat_proxy
+    permission: proxymaster
+  set_proxy_config:
+    description: Sets a config
+    usage: /set_proxy_config <key> <value>
+    permission: proxymaster
+permissions:
+  proxymaster:
+    description: gives access to all ChatProxy commands
+    default: op

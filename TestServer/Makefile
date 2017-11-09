@@ -3,7 +3,7 @@ build:
 	mkdir -p minecraft
 	# todo autorestart=no
 	# ctrl + c to exit
-	docker run -d -e EULA=true  -p 25569:25565 -v `pwd`/minecraft:/minecraft --name spigot spigot:latest
+	docker run -d -e EULA=true  -p 25569:25565 -v `pwd`/minecraft:/minecraft --name spigot nimmis/spigot:latest
 	# container logs
 	# ctrl + c to exit
 	docker logs spigot -f
